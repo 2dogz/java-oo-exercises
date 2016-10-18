@@ -6,7 +6,7 @@ public class Course {
 	private Student[] Roster;
 	
 	
-	public Course(String Name, int EmptySeats, int NumStudents){
+	public Course(String Name, int Credits, int EmptySeats){
 		this.Name = Name;
 		this.EmptySeats = EmptySeats;
 		this.Credits = 0;
@@ -37,7 +37,7 @@ public class Course {
 			if (Roster.equals(s2.getName())){
 				return false;
 			}
-		//update seats
+		//update seats if student passes first 2 test
 		Roster[Roster.length - this.EmptySeats] = s2;
 		this.EmptySeats -= 1;
 			return true;

@@ -76,15 +76,8 @@ public class Student {
 		return kid;
 		
 	}
-	
 	public String toString(){
 		return ( this.FirstName + " " + this.LastName + " " + this.StudentID);
 	}
 	
-
-
-
-
-
-
 }
